@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog || Donate Bangladesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <nav class="sm:flex-auto bg-[#ebe8e9] sm:pb-8 sm:pt-4">
+    <div class="navbar w-9/10 flex flex-row justify-between  mx-auto ">
+      <div class="">
+        <button onclick="window.location.href='index.html'" class= "btn bg-[#B4F461] hover:bg-[#bab8b8] rounded-xl sm:text-xl sm:p-6 ">Home</button>
+      </div>
+
+      <div class="m-3 flex items-center gap-x-2 ">
+        <img class="max-w-full h-auto" src="assets/logo.png" alt="loading...">
+        <p class="sm:text-xl text-sm font-bold ">Donate Bangladesh</p>
+      </div>
+
+      <div class=" flex gap-x-1 pl-4 items-center">
+        <img class="max-w-full h-auto" src="assets/coin.png" alt="loading....">
+        <p id="total-money" class="text-xs sm:text-xl  font-medium ">5500 BDT</p>
+      </div>
+    </div>
+  </nav>
+
+  <main class="w-9/10 mx-auto mt-6">
+    <div class="join join-vertical bg-base-100 w-full">
+      <div class="my-10">
+        <p class="text-3xl font-bold">Important FAQ</p>
+      </div>
+      <div class="collapse collapse-arrow join-item border-gray-400 border rounded-t-xl">
+        <input type="radio" name="my-accordion-4" checked="checked" />
+        <div class="collapse-title font-semibold text-xl">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content text-sm font-medium text-gray-600">The DOM is basically the browser's way of understanding and working with your webpage. When a page loads, the browser takes all the HTML and turns it into a structured tree of elements. Each tag—like a heading, a link, or an image—becomes an object that JavaScript can interact with. So if you want to change text, hide something, or respond when someone clicks a button, you're doing it through the DOM. It's what makes webpages dynamic and interactive instead of just static content.</div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-gray-400 border ">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title font-semibold text-xl ">How do you select an element from the DOM?</div>
+        <div class="collapse-content text-sm font-medium text-gray-600">To work with an element on a page, you first need to select it from the DOM. This means you're telling the browser, "Hey, I want to target this specific part of the page." You can do this by referencing things like the elements class, ID, tag name, or other attributes. Once you've selected it, you can read its content, change how it looks, or listen for events like clicks or keypresses. It's the starting point for doing anything dynamic on the page.</div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-gray-400 border ">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title font-semibold text-xl">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content text-sm font-medium text-gray-600">Event delegation is a smart way of handling user interactions, especially when you're dealing with a lot of similar elements, like a list of buttons or items. Instead of attaching an event listener to each individual item, you attach it to a common parent. When a user interacts with one of the child elements, the event naturally bubbles up to the parent, and you can figure out which specific item was clicked. It saves memory, keeps your code cleaner, and even works with elements added to the page later.</div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-gray-400 border rounded-b-xl">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title font-semibold text-xl">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content text-sm font-medium  text-gray-600">Once you have selected an element from the DOM, you can change how it looks or behaves by updating its attributes and styles. For example, you might want to change the text, update a link, show or hide something, or apply a new style like a background color. This can be done directly or by adding and removing CSS classes. It gives you full control over the content and appearance of elements in real time, making your site feel more responsive and interactive.</div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="utilities.js"></script>
+</body>
+</html>

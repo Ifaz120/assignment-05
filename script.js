@@ -1,6 +1,31 @@
 
 // this is for noakhali card
 
+document.getElementById("history-btn").addEventListener("click", function(event){
+  event.preventDefault();
+  document.getElementById("donation-sector").classList.add("hidden");
+  document.getElementById("transaction-id").classList.remove("hidden");
+  // button changing
+  document.getElementById("history-btn").classList.add("bg-[#B4F461]");
+  document.getElementById("history-btn").classList.remove("bg-[#bab8b8]");
+  document.getElementById("donation-btn").classList.add("bg-[#bab8b8]");
+  document.getElementById("donation-btn").classList.remove("bg-[#B4F461]");
+  
+
+})
+
+document.getElementById("donation-btn").addEventListener("click", function(event){
+  event.preventDefault();
+  document.getElementById("transaction-id").classList.add("hidden");
+  document.getElementById("donation-sector").classList.remove("hidden");
+  // button changing
+  document.getElementById("history-btn").classList.add("bg-[#bab8b8]");
+  document.getElementById("history-btn").classList.remove("bg-[#B4F461]");
+  document.getElementById("donation-btn").classList.add("bg-[#B4F461]");
+  document.getElementById("donation-btn").classList.remove("bg-[#bab8b8]");
+
+})
+
 document.getElementById("noakhali-button").addEventListener("click", function(event){
   event.preventDefault();
 
@@ -20,7 +45,12 @@ document.getElementById("noakhali-button").addEventListener("click", function(ev
     const newNoaKhaliDonation = donateBalanceNoakhali + noakhaliDonation ;
     document.getElementById("noakhali-fund").innerText = `${newNoaKhaliDonation} BDT `;
 
+    // transactions part 
+
+    addTransactions(donateBalanceNoakhali, "flood relief in Noakhali, Bangladesh.");
+
   }
+
 
 } )
 
@@ -45,6 +75,7 @@ document.getElementById("feni-button").addEventListener("click", function(event)
     const newFeniDonation = donateBalance_2 + FeniDonation ;
     document.getElementById("feni-fund").innerText = `${newFeniDonation} BDT `;
 
+    addTransactions(donateBalance_2, "flood relief in Feni , Bangladesh.");
   }
 
 } )
@@ -71,6 +102,7 @@ document.getElementById("quota-button").addEventListener("click", function(event
     const newQuotaDonation = donateBalanceQuota + quotaDonation ;
     document.getElementById("quota-fund").innerText = `${newQuotaDonation} BDT `;
 
+    addTransactions(donateBalanceQuota, "helping the injured in the Quota movement in Bangladesh.");
   }
 
 } )
