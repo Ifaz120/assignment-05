@@ -10,6 +10,7 @@ document.getElementById("history-btn").addEventListener("click", function(event)
   document.getElementById("history-btn").classList.remove("bg-[#bab8b8]");
   document.getElementById("donation-btn").classList.add("bg-[#bab8b8]");
   document.getElementById("donation-btn").classList.remove("bg-[#B4F461]");
+  window.scrollTo({ top: 0, behavior: "smooth" });
   
 
 })
